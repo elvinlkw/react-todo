@@ -11,11 +11,11 @@ var ToDoSearch = React.createClass({
         return(
             <div>
                 <div>
-                    <input type="search" ref="searchText" placeholder="Search To Do" onSearch={this.handleSearch}/>
+                    <input type="search" ref="searchText" placeholder="Search To Do" onChange={this.handleSearch}/>
                 </div>
                 <div>
                     <label>
-                        <input type="checkbox" ref="showCompleted" onSearch={this.handleSearch}/>
+                        <input type="checkbox" ref="showCompleted" onChange={this.handleSearch}/>
                         Show Completed To Dos
                     </label>
                 </div>
